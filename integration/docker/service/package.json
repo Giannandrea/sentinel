@@ -9,8 +9,8 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
-    "koa": "^2.5.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.4.0"
+    "koa": "^2.12.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.0.1"
   }
 }

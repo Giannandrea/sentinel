@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:lts-buster-slim
 
 COPY index.js /index.js
 COPY package.json /package.json

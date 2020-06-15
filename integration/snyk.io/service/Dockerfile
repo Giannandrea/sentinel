@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:lts-buster-slim
 
 RUN useradd -m snyk
 RUN npm install -g snyk

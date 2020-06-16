@@ -1,7 +1,11 @@
-FROM nablac0d3/sslyze
+FROM python:3.7-slim
+RUN pip install sslyze
+ENTRYPOINT ["sslyze"]
+
 ENV NODEVER v12.9.1
 ENV NPM ./node-$NODEVER-linux-x64/lib/node_modules/npm/bin/npm-cli.js
 WORKDIR /app
+
 ADD ./package.json ./package.json
 RUN apt-get update && apt-get install -y --no-install-recommends wget \
     && wget -nv http://nodejs.org/dist/$NODEVER/node-$NODEVER-linux-x64.tar.gz \
